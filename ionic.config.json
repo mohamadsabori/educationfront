@@ -1,0 +1,8 @@
+{
+  "name": "shareimage",
+  "app_id": "61c8ed74",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
