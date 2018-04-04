@@ -1,3 +1,126 @@
 page-home {
+  #arrowtoright {
+    border: none;
+    border-top: 4px dotted #f00;
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 50%;
+  }
 
+  .figure {
+    border-radius: 15px 20px;
+    background: #73AD21;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .circle-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .top-left {
+    border-top-left-radius: 100px;
+    background: #1fb14e;
+    float: left
+  }
+  .quarter {
+    width: 50px;
+    height: 50px
+  }
+
+  .arrow {
+    width: 120px;
+  }
+
+  .line {
+    margin-top: 14px;
+    width: 90px;
+    background: blue;
+    height: 10px;
+    float: left;
+  }
+  .point {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid blue;
+    float: right;
+  }
+
+  .example1 {
+    border: 2px solid #595b5d;
+    padding: 10px;
+    border-radius: 2em 1em 4em / 0.5em 3em;
+    width: 55px;
+    height: 55px;
+    float: right;
+    right: 65px;
+    position: absolute;
+
+  }
+
+  .dashedarrow {
+    width: 58px;
+    /* height: 2px; */
+    border: dashed 1px #000;
+    border-color: transparent transparent #000 #000;
+    border-radius: 0px 0px 0px 0px;
+    position: absolute;
+    right: 118px;
+    top: 370px;
+    float: left
+  }
+
+  #circle {
+    background: #595b5d;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 175px;
+  }
+
+  .boxrighttodown {
+    width: 40px;
+    height: 40px;
+    border: dashed 1px #595b5d;
+    border-color: #ffffff #ffffff #ffffff #000;
+    border-radius: 250px 0px 0px 0px;
+    position: absolute;
+    right: 221px;
+    top: 370px;
+    float: left;
+  }
+  .boxrighttoright {
+    width: 40px;
+    height: 40px;
+    border: dashed 1px #595b5d;
+    border-color: #ffffff #ffffff #ffffff #000;
+    border-radius: 0px 0px 0px 250px;
+    position: absolute;
+    right: 221px;
+    top: 420px;
+    float: left;
+  }
+  .ios, .md {
+
+    page-home {
+
+      .scroll-content {
+        background-color: map-get($colors, light);
+      }
+
+      ion-card-header {
+        font-weight: bold;
+      }
+
+    }
+
+  }
 }

@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
-import {WebIntent} from "@ionic-native/web-intent";
+import {QuizPageComponent} from "../../components/quiz-page/quiz-page";
 
 @Component({
   selector: 'page-home',
@@ -8,11 +8,11 @@ import {WebIntent} from "@ionic-native/web-intent";
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, private webIntent: WebIntent) {
-    const options = {
-      action: this.webIntent.ACTION_VIEW,
-      url: 'path/to/file',
-      type: 'application/vnd.android.package-archive'
-    };
+  constructor(public navCtrl: NavController) { }
+
+  ionViewDidLoad() { }
+  sayHello() {
+    this.navCtrl.push(QuizPageComponent);
+    console.log('Hello');
   }
 }

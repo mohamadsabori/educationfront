@@ -1,14 +1,18 @@
-import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
+import {Component, ViewChild} from '@angular/core';
+import {Nav, Platform} from 'ionic-angular';
+import {StatusBar} from '@ionic-native/status-bar';
+import {SplashScreen} from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
+import {HomePage} from '../pages/home/home';
+import {CreateCoursePage} from "../pages/create-course/create-course";
+import {RegisterPage} from "../pages/register/register";
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  @ViewChild(Nav) nav: Nav;
+  rootPage: any = RegisterPage;
+  pages: Array<{ title: string, component: any }>
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -16,7 +20,16 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+      this.pages = [
+        {title: 'خانه', component: HomePage},
+        {title: 'تولید محتوای آموزشی', component: CreateCoursePage}
+      ];
+
     });
+  }
+
+  openPage(component) {
+    this.nav.setRoot(component.component);
   }
 }
 
