@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {UserprofileComponent} from "../userprofile/userprofile";
 import {NavController} from "ionic-angular";
+import {UserprofilePage} from "../../pages/userprofile/userprofile";
 
 /**
  * Generated class for the SettingsComponent component.
@@ -22,7 +23,7 @@ export class SettingsComponent {
   }
 
   openUserProfile(){
-    this.navCtrl.push(UserprofileComponent);
+    this.navCtrl.push(UserprofilePage);
   }
 
 }

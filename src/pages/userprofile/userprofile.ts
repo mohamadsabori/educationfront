@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the CreateCoursePage page.
+ * Generated class for the UserprofilePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,22 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-create-course',
-  templateUrl: 'create-course.html',
+  selector: 'page-userprofile',
+  templateUrl: 'userprofile.html',
 })
-export class CreateCoursePage {
-
-  public options: Object = {
-    placeholderText: 'Edit Your Content Here!',
-    charCounterCount: false,
-    imageUploadURL: './'
-  }
+export class UserprofilePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CreateCoursePage');
+    console.log('ionViewDidLoad UserprofilePage');
   }
 
 }

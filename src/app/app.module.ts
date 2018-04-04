@@ -24,6 +24,7 @@ import {RegisterPage} from "../pages/register/register";
 import {ActivationPage} from "../pages/activation/activation";
 import {UserprofileComponent} from "../components/userprofile/userprofile";
 import {SettingsComponent} from "../components/settings/settings";
+import {UserprofilePage} from "../pages/userprofile/userprofile";
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import {SettingsComponent} from "../components/settings/settings";
     RegisterPage,
     ActivationPage,
     UserprofileComponent,
-    SettingsComponent
+    SettingsComponent,
+    UserprofilePage
   ],
   imports: [
     BrowserModule,
@@ -64,7 +66,8 @@ import {SettingsComponent} from "../components/settings/settings";
     RegisterPage,
     ActivationPage,
     UserprofileComponent,
-    SettingsComponent
+    SettingsComponent,
+    UserprofilePage
 
   ],
   providers: [
