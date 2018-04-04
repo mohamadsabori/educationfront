@@ -5,19 +5,25 @@ import { LefttodownComponent } from './lefttodown/lefttodown';
 import { UptoleftComponent } from './uptoleft/uptoleft';
 import { FlashCardComponent } from './flash-card/flash-card';
 import { QuizPageComponent } from './quiz-page/quiz-page';
+import { UserprofileComponent } from './userprofile/userprofile';
+import { SettingsComponent } from './settings/settings';
 @NgModule({
 	declarations: [RighttodownComponent,
     UptorightComponent,
     LefttodownComponent,
     UptoleftComponent,
     FlashCardComponent,
-    QuizPageComponent],
+    QuizPageComponent,
+    UserprofileComponent,
+    SettingsComponent],
 	imports: [],
 	exports: [RighttodownComponent,
     UptorightComponent,
     LefttodownComponent,
     UptoleftComponent,
     FlashCardComponent,
-    QuizPageComponent]
+    QuizPageComponent,
+    UserprofileComponent,
+    SettingsComponent]
 })
 export class ComponentsModule {}

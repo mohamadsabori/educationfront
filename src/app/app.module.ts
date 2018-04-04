@@ -21,6 +21,9 @@ import {FroalaEditorModule, FroalaViewModule} from "angular-froala-wysiwyg";
 import "froala-editor/js/froala_editor.pkgd.min.js";
 import {CreateCoursePage} from "../pages/create-course/create-course";
 import {RegisterPage} from "../pages/register/register";
+import {ActivationPage} from "../pages/activation/activation";
+import {UserprofileComponent} from "../components/userprofile/userprofile";
+import {SettingsComponent} from "../components/settings/settings";
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import {RegisterPage} from "../pages/register/register";
     FlashCardComponent,
     QuizPageComponent,
     CreateCoursePage,
-    RegisterPage
+    RegisterPage,
+    ActivationPage,
+    UserprofileComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +61,11 @@ import {RegisterPage} from "../pages/register/register";
     FlashCardComponent,
     QuizPageComponent,
     CreateCoursePage,
-    RegisterPage
+    RegisterPage,
+    ActivationPage,
+    UserprofileComponent,
+    SettingsComponent
+
   ],
   providers: [
     WebIntent,

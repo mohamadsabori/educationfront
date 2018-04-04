@@ -18,7 +18,7 @@ export class CreateCoursePage {
   public options: Object = {
     placeholderText: 'Edit Your Content Here!',
     charCounterCount: false,
-    // imageUploadURL: '../assets'
+    imageUploadURL: '../../assets'
   }
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {

@@ -6,12 +6,16 @@
 -->
 
 
-<ion-content padding style="background-color: #1fb14e">
-  <div style="position: absolute;top: 150px;text-align: center;horiz-align: center;vertical-align: middle; width:100%;">
-      <ion-input type="tel" style="border-radius: 25px;
-    background: #ad40a4;text-align: center;padding: 20px;width:200px;">
-      </ion-input>
-      <button ion-button>دریافت کد فعالسازی</button>
+<ion-content padding style="background-color: #55acee">
+  <img src="../../assets/images/education.png">
+  <div text-center style="background-color: antiquewhite;width: 100%" >
+
+    <ion-label>لطفا شماره موبایل خود را وارد نمایید</ion-label>
+    <ion-item>
+      <ion-label color="primary">شماره موبایل</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+      <button ion-button (click)="sendPhoneNumber()">دریافت کد فعالسازی</button>
   </div>
 
 

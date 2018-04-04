@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {HomePage} from "../home/home";
 
 /**
  * Generated class for the ActivationPage page.
@@ -20,6 +21,13 @@ export class ActivationPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ActivationPage');
+  }
+
+  activation(){
+    this.navCtrl.setRoot(HomePage);
+  }
+  sendPhoneNumber(){
+    this.navCtrl.push(ActivationPage);
   }
 
 }

@@ -6,6 +6,7 @@ import {SplashScreen} from '@ionic-native/splash-screen';
 import {HomePage} from '../pages/home/home';
 import {CreateCoursePage} from "../pages/create-course/create-course";
 import {RegisterPage} from "../pages/register/register";
+import {SettingsComponent} from "../components/settings/settings";
 @Component({
   templateUrl: 'app.html'
 })
@@ -22,14 +23,15 @@ export class MyApp {
       splashScreen.hide();
       this.pages = [
         {title: 'خانه', component: HomePage},
-        {title: 'تولید محتوای آموزشی', component: CreateCoursePage}
+        {title: 'تولید محتوای آموزشی', component: CreateCoursePage},
+        {title: 'تنظیمات', component: SettingsComponent}
       ];
 
     });
   }
 
   openPage(component) {
-    this.nav.setRoot(component.component);
+    this.nav.push(component.component);
   }
 }
 
