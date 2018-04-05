@@ -25,6 +25,9 @@ import {ActivationPage} from "../pages/activation/activation";
 import {UserprofileComponent} from "../components/userprofile/userprofile";
 import {SettingsComponent} from "../components/settings/settings";
 import {UserprofilePage} from "../pages/userprofile/userprofile";
+import {HttpModule} from "@angular/http";
+import {ExplanationstageComponent} from "../components/explanationstage/explanationstage";
+import {QuizestageComponent} from "../components/quizestage/quizestage";
 
 @NgModule({
   declarations: [
@@ -43,10 +46,13 @@ import {UserprofilePage} from "../pages/userprofile/userprofile";
     ActivationPage,
     UserprofileComponent,
     SettingsComponent,
-    UserprofilePage
+    UserprofilePage,
+    ExplanationstageComponent,
+    QuizestageComponent
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     FroalaEditorModule.forRoot(),
     FroalaViewModule.forRoot(),
     IonicModule.forRoot(MyApp)
@@ -67,14 +73,16 @@ import {UserprofilePage} from "../pages/userprofile/userprofile";
     ActivationPage,
     UserprofileComponent,
     SettingsComponent,
-    UserprofilePage
+    UserprofilePage,
+    ExplanationstageComponent,
+    QuizestageComponent
 
   ],
   providers: [
     WebIntent,
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    {provide: {ErrorHandler} , useClass: IonicErrorHandler},
     DataProvider
   ]
 })

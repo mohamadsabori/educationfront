@@ -7,6 +7,8 @@ import { FlashCardComponent } from './flash-card/flash-card';
 import { QuizPageComponent } from './quiz-page/quiz-page';
 import { UserprofileComponent } from './userprofile/userprofile';
 import { SettingsComponent } from './settings/settings';
+import { ExplanationstageComponent } from './explanationstage/explanationstage';
+import { QuizestageComponent } from './quizestage/quizestage';
 @NgModule({
 	declarations: [RighttodownComponent,
     UptorightComponent,
@@ -15,7 +17,9 @@ import { SettingsComponent } from './settings/settings';
     FlashCardComponent,
     QuizPageComponent,
     UserprofileComponent,
-    SettingsComponent],
+    SettingsComponent,
+    ExplanationstageComponent,
+    QuizestageComponent],
 	imports: [],
 	exports: [RighttodownComponent,
     UptorightComponent,
@@ -24,6 +28,8 @@ import { SettingsComponent } from './settings/settings';
     FlashCardComponent,
     QuizPageComponent,
     UserprofileComponent,
-    SettingsComponent]
+    SettingsComponent,
+    ExplanationstageComponent,
+    QuizestageComponent]
 })
 export class ComponentsModule {}

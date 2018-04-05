@@ -7,9 +7,8 @@
 </ion-header>
 
 <ion-content padding>
-  <div style="text-align: center">
-    <canvas style="width: 50px"></canvas>
-    <img src="../assets/imgs/assesment.png" style="max-width: 50px">
+  <div style="text-align: center" text-center>
+    <img src="../assets/imgs/assesment.png" style="max-width: 50px;margin-right: 54px">
     <curved-line></curved-line>
     <img src="../assets/imgs/arthimetic.png" style="max-width: 50px">
     <righttodown></righttodown>
@@ -23,8 +22,11 @@
     <uptoleft></uptoleft>
     <img src="../assets/imgs/assesment.png" style="max-width: 50px">
     <curved-line></curved-line>
-    <ion-img src="../assets/imgs/arthimetic.png" (click)="sayHello()" style="width: 50px"></ion-img>
+    <img src="../assets/imgs/arthimetic.png" style="max-width: 50px;margin-left: 57px;">
     <!--<img src=""  >-->
-    <canvas style="width: 50px"></canvas>
   </div>
+  <span *ngFor="let course of courseData">
+    <explanationstage *ngIf="course.explanationStage != null" [values]="course.explanationStage"></explanationstage>
+    <quizestage *ngIf="course.quizStage != null"></quizestage>
+  </span>
 </ion-content>

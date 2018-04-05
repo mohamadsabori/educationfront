@@ -1,0 +1,113 @@
+{
+  "successful": null,
+  "errorCode": null,
+  "errorMessage": null,
+  "error": null,
+  "response": {
+  "course": {
+    "id": 1,
+      "name": "Math"
+  },
+  "user": null,
+    "courseStageList": [
+    {
+      "explanationStage": {
+        "explanationPages": [
+          {
+            "id": 5,
+            "body": "learn Math part 1",
+            "pageNumber": 1,
+            "marked": false
+          },
+          {
+            "id": 6,
+            "body": "blah blah",
+            "pageNumber": 2,
+            "marked": true
+          }
+        ],
+        "explanationStage": {
+          "id": 4,
+          "title": "part1",
+          "sequenceNumber": 1,
+          "paceScore": 10,
+          "requiredTime": null
+        }
+      },
+      "quizStage": null,
+      "stageCompletion": {
+        "id": 15,
+        "stageCompletionStatus": null,
+        "gainedScore": 10,
+        "completionTime": null,
+        "createdDate": null,
+        "answers": null
+      }
+    },
+    {
+      "explanationStage": null,
+      "quizStage": {
+        "questions": [
+          {
+            "questionOptions": [
+              {
+                "id": 9,
+                "value": "A) 5",
+                "sequence": 1
+              },
+              {
+                "id": 10,
+                "value": "B) 4",
+                "sequence": 2
+              },
+              {
+                "id": 11,
+                "value": "C) 2",
+                "sequence": 3
+              },
+              {
+                "id": 12,
+                "value": "D) 6",
+                "sequence": 4
+              }
+            ],
+            "id": 8,
+            "order": 2,
+            "label": "B",
+            "body": "2+2 = 4",
+            "answer": "B",
+            "type": null,
+            "score": 5
+          }
+        ],
+        "quizeStage": {
+          "id": 7,
+          "title": "quiz1",
+          "sequenceNumber": 2,
+          "paceScore": 80,
+          "requiredTime": 20
+        }
+      },
+      "stageCompletion": {
+        "id": 13,
+        "stageCompletionStatus": null,
+        "gainedScore": 0,
+        "completionTime": 3,
+        "createdDate": null,
+        "answers": {
+          "8": {
+            "id": 10,
+            "value": "B) 4",
+            "sequence": 2
+          }
+        }
+      }
+    }
+  ],
+    "courseCompletion": {
+    "id": 3,
+      "currentSequence": 1,
+      "score": 10
+  }
+}
+}

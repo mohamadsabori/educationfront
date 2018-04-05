@@ -30,6 +30,7 @@
     "@ionic/pro": "1.0.17",
     "@ionic/storage": "2.1.3",
     "angular-froala-wysiwyg": "^2.7.6",
+    "angular-ui-carousel": "^0.1.10",
     "com-darryncampbell-cordova-plugin-intent": "0.0.19",
     "cordova-android": "^4.1.1",
     "cordova-plugin-device": "^2.0.1",
