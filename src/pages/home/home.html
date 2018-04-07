@@ -27,6 +27,6 @@
   </div>
   <span *ngFor="let course of courseData">
     <explanationstage *ngIf="course.explanationStage != null" [values]="course.explanationStage"></explanationstage>
-    <quizestage *ngIf="course.quizStage != null"></quizestage>
+    <quizestage *ngIf="course.quizStage != null" [values]="course.quizStage"></quizestage>
   </span>
 </ion-content>

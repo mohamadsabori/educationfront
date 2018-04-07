@@ -28,6 +28,9 @@ import {UserprofilePage} from "../pages/userprofile/userprofile";
 import {HttpModule} from "@angular/http";
 import {ExplanationstageComponent} from "../components/explanationstage/explanationstage";
 import {QuizestageComponent} from "../components/quizestage/quizestage";
+import {ExplanationComponent} from "../components/explanation/explanation";
+import {QuizeComponent} from "../components/quize/quize";
+import {CreatequizzPage} from "../pages/createquizz/createquizz";
 
 @NgModule({
   declarations: [
@@ -48,7 +51,10 @@ import {QuizestageComponent} from "../components/quizestage/quizestage";
     SettingsComponent,
     UserprofilePage,
     ExplanationstageComponent,
-    QuizestageComponent
+    QuizestageComponent,
+    ExplanationComponent,
+    QuizeComponent,
+    CreatequizzPage
   ],
   imports: [
     BrowserModule,
@@ -75,8 +81,10 @@ import {QuizestageComponent} from "../components/quizestage/quizestage";
     SettingsComponent,
     UserprofilePage,
     ExplanationstageComponent,
-    QuizestageComponent
-
+    QuizestageComponent,
+    ExplanationComponent,
+    QuizeComponent,
+    CreatequizzPage
   ],
   providers: [
     WebIntent,

@@ -1,0 +1,21 @@
+<!-- Generated template for the QuizeComponent component -->
+<ion-header>
+  <button ion-button (click)="closePage()">بستن</button>
+</ion-header>
+<ion-content>
+  <ion-slides #slides>
+    <ion-slide *ngFor="let quize of quizes">
+      <h3>{{quize.label}}</h3>
+      <flash-card [isFlipped]="quize.flashCardFlipped">
+        <div class="flash-card-front">{{quize.body}}</div>
+        <div class="flash-card-back">{{quize.answer}}</div>
+      </flash-card>
+      <ion-list no-lines radio-group>
+        <ion-item *ngFor="let questionOption of quize.questionOptions">
+          <ion-label>{{questionOption.value}}</ion-label>
+          <ion-radio (click)="selectAnswer(quize)"></ion-radio>
+        </ion-item>
+      </ion-list>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

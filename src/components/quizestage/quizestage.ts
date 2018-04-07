@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {NavController} from "ionic-angular";
+import {QuizeComponent} from "../quize/quize";
 
 /**
  * Generated class for the QuizestageComponent component.
@@ -12,11 +14,15 @@ import { Component } from '@angular/core';
 })
 export class QuizestageComponent {
 
-  text: string;
+  @Input() values: any;
 
-  constructor() {
-    console.log('Hello QuizestageComponent Component');
-    this.text = 'Hello World';
+  constructor(private _navCtrl: NavController) {
+
+  }
+
+  openQuize() {
+    console.log(this.values);
+    this._navCtrl.push(QuizeComponent, {'quizes': this.values.questions});
   }
 
 }

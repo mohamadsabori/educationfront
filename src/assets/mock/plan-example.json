@@ -73,11 +73,12 @@
             ],
             "id": 8,
             "order": 2,
-            "label": "B",
+            "label": "Select currect answer",
             "body": "2+2 = 4",
             "answer": "B",
             "type": null,
-            "score": 5
+            "score": 5,
+            "flashCardFlipped": false
           }
         ],
         "quizeStage": {

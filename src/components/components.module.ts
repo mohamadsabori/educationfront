@@ -9,6 +9,8 @@ import { UserprofileComponent } from './userprofile/userprofile';
 import { SettingsComponent } from './settings/settings';
 import { ExplanationstageComponent } from './explanationstage/explanationstage';
 import { QuizestageComponent } from './quizestage/quizestage';
+import { ExplanationComponent } from './explanation/explanation';
+import { QuizeComponent } from './quize/quize';
 @NgModule({
 	declarations: [RighttodownComponent,
     UptorightComponent,
@@ -19,7 +21,9 @@ import { QuizestageComponent } from './quizestage/quizestage';
     UserprofileComponent,
     SettingsComponent,
     ExplanationstageComponent,
-    QuizestageComponent],
+    QuizestageComponent,
+    ExplanationComponent,
+    QuizeComponent],
 	imports: [],
 	exports: [RighttodownComponent,
     UptorightComponent,
@@ -30,6 +34,8 @@ import { QuizestageComponent } from './quizestage/quizestage';
     UserprofileComponent,
     SettingsComponent,
     ExplanationstageComponent,
-    QuizestageComponent]
+    QuizestageComponent,
+    ExplanationComponent,
+    QuizeComponent]
 })
 export class ComponentsModule {}

@@ -1,0 +1,25 @@
+<!--
+  Generated template for the CreatequizzPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>تولید آزمون</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-input type="text" placeholder="عنوان سوال" [(ngModel)]="quize.label"></ion-input>
+  <textarea [froalaEditor]="options" [(ngModel)]="quize.body"></textarea>
+  <button ion-button (click)="addAnswer()" icon-start><ion-icon name="add"></ion-icon></button>
+  <ion-list radio-group>
+    <ion-item *ngFor="let option of quize.questionOptions">
+      <ion-radio (click)="selectAnswer(option)"><ion-input type="text"></ion-input></ion-radio>
+    </ion-item>
+  </ion-list>
+</ion-content>

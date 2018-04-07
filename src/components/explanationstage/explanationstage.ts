@@ -1,4 +1,7 @@
 import {Component, Input} from '@angular/core';
+import {NavController} from "ionic-angular";
+import {ExplanationComponent} from "../explanation/explanation";
+
 
 /**
  * Generated class for the ExplanationstageComponent component.
@@ -14,11 +17,11 @@ export class ExplanationstageComponent {
 
   @Input() values: any;
 
-  constructor() {
+  constructor(private navCtrl: NavController) {
   }
 
-  showExplanationDetails(){
-    console.log(this.values);
+  showExplanationDetails() {
+    this.navCtrl.push(ExplanationComponent, {explanationPages: this.values.explanationPages});
   }
 
 }

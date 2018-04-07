@@ -1,0 +1,11 @@
+<!-- Generated template for the ExplanationComponent component -->
+<ion-header>
+  <button ion-button (click)="closePage()">بستن</button>
+</ion-header>
+<ion-content padding>
+  <ion-slides #slides>
+    <ion-slide *ngFor="let val of explanationPages">
+      {{val.body}}
+    </ion-slide>
+  </ion-slides>
+</ion-content>

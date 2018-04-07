@@ -7,6 +7,7 @@ import {HomePage} from '../pages/home/home';
 import {CreateCoursePage} from "../pages/create-course/create-course";
 import {RegisterPage} from "../pages/register/register";
 import {SettingsComponent} from "../components/settings/settings";
+import {CreatequizzPage} from "../pages/createquizz/createquizz";
 @Component({
   templateUrl: 'app.html'
 })
@@ -24,6 +25,7 @@ export class MyApp {
       this.pages = [
         {title: 'خانه', component: HomePage},
         {title: 'تولید محتوای آموزشی', component: CreateCoursePage},
+        {title: 'تولید آزمون', component: CreatequizzPage},
         {title: 'تنظیمات', component: SettingsComponent}
       ];
 
